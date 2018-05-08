@@ -13,7 +13,7 @@ namespace ArubIslander.Collections.Generic
         void Close();
     }
 
-    public interface OutChannel<T> {
+    public interface OutChannel<T> : IEnumerable<T> {
         T Receive();
     }
 
